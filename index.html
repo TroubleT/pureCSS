@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3D Shading with Box-Shadows</title>
+	<meta name="description" content="A shading effect for 3D transformed elements" />
+	<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="img/winelogo.jpg">
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+	<link rel="stylesheet" href="css/burger-menu.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/info.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu">
+			<div class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div class="menu__links">
+				<a class="menu__links-item" href="/">Item 1</a>
+				<a class="menu__links-item" href="/">Item 2</a>
+			</div>
+		</div>
+		<header class="main wrapper">
+			<div class="card">
+				<div class="front">
+					<img class="img" src="../img/winelogo.jpg">
+				</div>
+				<div class="back">
+					<img class="img" src="../img/wine.gif">
+				</div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<ul class="stage clearfix">
+
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>It's a Wonderful Life</h1>
+							</header>
+							<p>
+								In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings.
+								Franklin and Joseph, the head angels, review George's life with Clarence.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>It's a Wonderful Life</h1>
+							</header>
+							<p>
+								In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings.
+								Franklin and Joseph, the head angels, review George's life with Clarence.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>It's a Wonderful Life</h1>
+							</header>
+							<p>
+								In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings.
+								Franklin and Joseph, the head angels, review George's life with Clarence.
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>Vengeance Valley</h1>
+								<span class="year">1951</span>
+								<span class="rating">NR</span>
+								<span class="duration">83 minutes</span>
+							</header>
+							<p>
+								A cattle baron takes in an orphaned boy and raises him, causing his own son to resent the boy. As they get older the resentment festers into hatred, and eventually the real son frames his stepbrother for fathering an illegitimate child that is actually
+								his, seeing it as an opportunity to get his half-brother out of the way so he can have his father's empire all to himself.
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>The Gold Rush</h1>
+								<span class="year">1925</span>
+								<span class="rating">NR</span>
+								<span class="duration">95 minutes</span>
+							</header>
+							<p>
+								The Tramp travels to the Yukon to take part in the Klondike Gold Rush. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="scene">
+					<div class="movie" onclick="return true">
+						<div class="poster"></div>
+						<div class="info">
+							<header>
+								<h1>Pro wines</h1>
+							</header>
+							<p>
+								THIS my.
+							</p>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- /wrapper -->
+		<section class="information">
+			<div class="information">
+				<img class='img-info' src="img/wine-history.jpg">
+				<h1>
+					Історія виноробні
+				</h1>
+				<button id="myBtnH">Дізнатись</button>
+				<div id="myModalH" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p id="placeholderH"></p>
+					</div>
+				</div>
+			</div>
+			<div class="information">
+				<img class='img-info' src="img/cellar.jpg">
+				<h1>
+					Потужності виноробні
+				</h1>
+				<button id="myBtnC">Дізнатись</button>
+				<div id="myModalC" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p id="placeholderC"></p>
+					</div>
+				</div>
+			</div>
+			<div class="information">
+				<img class='img-info' src="img/info-wines.jpg">
+				<h1>
+					Вина
+				</h1>
+				<button id="myBtnW">Дізнатись</button>
+				<div id="myModalW" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p id="placeholderW"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section">
+			<div class="envelope">
+
+				<div class="envelope__top">
+					<img src="http://up-skills.ru/test/envelope-top.svg" alt="">
+				</div>
+
+				<div class="paper">
+					<form action="/action_page.php" style="max-width:500px;margin:auto">
+						<h2>Register Form</h2>
+						<div class="input-container">
+							<i class="fa fa-user icon"></i>
+							<input class="input-field" type="text" placeholder="Username" name="usrnm">
+						</div>
+
+						<div class="input-container">
+							<i class="fa fa-envelope icon"></i>
+							<input class="input-field" type="text" placeholder="Email" name="email">
+						</div>
+
+						<div class="input-container">
+							<i class="fa fa-key icon"></i>
+							<input class="input-field" type="password" placeholder="Password" name="psw">
+						</div>
+
+						<button type="submit" class="btn">Register</button>
+					</form>
+				</div>
+
+				<div class="envelope__body">
+					<img src="http://up-skills.ru/test/envelope.svg" alt="">
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div>
+				адрес зліва
+			</div>
+			<div>
+				Follow us
+				<a>
+					<img src="" alt = "youtube">
+				</a>
+			</div>
+			<a>copyright центр</a>
+		</footer>
+	</div>
+	<!-- /container -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
