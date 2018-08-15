@@ -5,10 +5,11 @@
 
 .stage {
 	list-style: none;
-	padding: 0;
 	display: flex;
+	flex-direction: row;
     justify-content:center;
     flex-wrap:wrap;
+    padding: 0;
 }
 
 /*************************************
@@ -74,6 +75,7 @@ Transform and style the two planes
 	transform: rotateY(90deg) translateZ(130px);
 	border: 1px solid #B8B5B5;
 	font-size: 0.75em;
+	background-color: #fffdd0;
 }
 
 
@@ -85,9 +87,8 @@ Movie information
 	color: #FFF;
 	padding: 7px 10px;
 	font-weight: bold;
-	height: 195px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	height: 20px;
+	background-color: #666;
 	text-shadow: 0px 1px 1px rgba(0,0,0,1);
 }
 
@@ -102,7 +103,6 @@ Movie information
 	font-weight: 700;
 	color: #666;
 	line-height: 1.4em;
-	border-top: 10px solid #555;
 }
 
 /*************************************
@@ -110,35 +110,31 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-  background-image: url(../img/poster01.jpg);
+  background-image: url(../img/nut.jpg);
+  background-position: center;
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url(../img/poster02.jpg);
+  background-image: url(../img/karkade.jpg);
+   background-position: center;
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(../img/poster03.jpg);
+  background-image: url(../img/kizil.jpg);
+   background-position: center;
 }
 .scene:nth-child(4) .poster {
-  background-image: url(../img/history.jpg);
+  background-image: url(../img/buz.jpg);
+   background-position: center;
 }
-
-.scene:nth-child(1) .info header {
-	background-image: url(../img/still01.jpg);
+.scene:nth-child(5) .poster {
+  background-image: url(../img/ali.jpg);
+   background-position: center;
 }
-
-.scene:nth-child(2) .info header {
-	background-image: url(../img/still02.jpg);
+.scene:nth-child(6) .poster {
+  background-image: url(../img/white.jpg);
+   background-position: center;
 }
-
-.scene:nth-child(3) .info header {
-	background-image: url(../img/still03.jpg);
-}
-.scene:nth-child(4) .info header {
-	background-image: url(../img/cellar.jpg);
-}
-
 /*************************************
 Fallback
 **************************************/

@@ -1,20 +1,49 @@
+body { 
+    background-image:url("../img/body-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    max-width:960px;
+    text-align:center;
+    margin-left:auto ;
+    margin-right:auto;
+
+}
+
+.container {
+    position: relative;
+    max-width:1000px;
+    width: 960px;
+    height: 250px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+
 .main {
     position: relative;
     max-width: 1000px;
-    height: 300px;
+    height: 250px;
     left: 0;
     top: 0;
     display: flex;
     justify-content:center;
     align-items:center;
-    background-image: url("/img/background.png");
+    background-image: url('/img/cork-background.jpg');
+    background-color: #fff;
 }
+
 .card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     position: relative;
     perspective: 1000px;
     border-radius: 200px;
+    z-index: 3;
 }
 .front , .back {
     position: absolute;
@@ -50,19 +79,20 @@
 
 .section {
   background-color: #fab1a0;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .envelope {
+
   position: relative;
-  width: 200px;
-  height: 110px;
+  width: 400px;
+  height: 400px;
+  left: 56%;
 }
 .envelope__top {
   position: absolute;
-  top: 0;
+  top: 47%;
   left: 0;
   width: 100%;
   transition: 0.2s;
@@ -71,11 +101,22 @@
 }
 .envelope__body {
   position: absolute;
+  top: 44%;
   bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
 }
+
+#env {
+      position: absolute;
+    top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
 .paper {
   background-color: #fff;
   width: 150px;
@@ -91,7 +132,7 @@
 
 .envelope__top_close {
     transform: translateY(-110%) rotateX(180deg);
-    z-index: 2;
+    z-index: 1;
 }
 .paper_close {
   transform: translateY(-10%);
@@ -137,4 +178,80 @@
 
 .btn:hover {
     opacity: 1;
+}
+
+footer {
+    background-color: blue;
+}
+
+.section {
+    right: 0;
+    bottom: 0;
+}
+
+/*topBtn*/
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+}
+
+#topBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*information div*/
+#information {
+    position: relative;
+    max-width: 960px;
+    height: auto;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+
+}
+
+.information {
+    position: relative;
+    text-align: center;
+    align-items:center;
+    width: 960px;
+    height: auto;
+    background-color: #FFF;
+    
+}
+
+.res {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+        position: relative;
+    max-width: 960px;
+    height: auto;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
 }
