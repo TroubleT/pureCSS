@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content:center;
     align-items:center;
-    background-image: url('/img/cork-background.jpg');
+    background-image: url('img/cork-background.jpg');
     background-color: #fff;
 }
 
