@@ -9,13 +9,13 @@
 	<meta name="description" content="львівська виноробня" />
 	<meta name="keywords" content="вино, Львів, каркаде, імунітет, дегустація, Men`s wines" />
 	<meta name="author" content="TroubleT" />
-	<link rel="shortcut icon" href="img/winelogo.jpg">
+	<link rel="shortcut icon" href="img/winelog.jpg">
 	<link rel="stylesheet" href="css/index.css" type="text/css" />
 	<link rel="stylesheet" href="css/burger-menu.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="css/info.css" type="text/css" />
+	<link rel="stylesheet" href="css/btnStyle.css" type="text/css" />
 </head>
-
 <body>
 	<button id="topBtn">Top</button>
 	<header class="main wrapper">
@@ -28,7 +28,7 @@
 			</div>
 			<div class="menu__links">
 				<a class="menu__links-item" href="#history">Історія</a>
-				<a class="menu__links-item" href="#wines">Вина</a>
+				<a class="menu__links-item" href="#wines" >Вина</a>
 				<a class="menu__links-item" href="#cellar">Виноробня</a>
 				<a class="menu__links-item" href="#order">Зробити замовлення</a>
 				<a class="menu__links-item" href="#follow">Контакти</a>
@@ -153,7 +153,7 @@
 				<h1 class="info-h">
 					Історія виноробні
 				</h1>
-				<button class="info-b" id="myBtnH">Дізнатись</button>
+				<button class="info-b btn btn-green btn-fill-vert-o" id="myBtnH">Дізнатись</button>
 			</div>
 			<div id="myModalH" class="modal">
 
@@ -170,7 +170,7 @@
 				<h1 class="info-h">
 					Потужності виноробні
 				</h1>
-				<button class="info-b" id="myBtnC">Дізнатись</button>
+				<button class="info-b btn btn-green btn-fill-vert-o" id="myBtnC">Дізнатись</button>
 			</div>
 			<div id="myModalC" class="modal">
 
@@ -187,7 +187,7 @@
 				<h1 class="info-h">
 					Вина
 				</h1>
-				<button class="info-b" id="myBtnW">Дізнатись</button>
+				<button class="info-b btn btn-green btn-fill-vert-o" id="myBtnW">Дізнатись</button>
 			</div>
 			<div id="myModalW" class="modal">
 
@@ -211,18 +211,18 @@
 					<form>
 						<h2>Замовлення</h2>
 						<div class="input-container">
-							<input class="input-field" type="text" placeholder="Username" name="usrnm">
+							<input class="input-field" type="text" placeholder="Ім'я" name="usrnm">
 						</div>
 
 						<div class="input-container">
-							<input class="input-field" type="text" placeholder="Email" name="email">
+							<input class="input-field" type="text" placeholder="E-mail" name="email">
 						</div>
 
 						<div class="input-container">
-							<input class="input-field" type="password" placeholder="Password" name="psw">
+							<input class="input-field" type="password" placeholder="Номер телефона" name="psw">
 						</div>
 
-						<button type="submit" class="btn">Register</button>
+						<button type="submit" id = 'sendForm' class="btn">Надіслати</button>
 					</form>
 				</div>
 
@@ -251,7 +251,7 @@
 				</a>
 		</div>
 		</div>
-		<a>Copyright &copy; 2018. All right reserved.</a>
+		<a>Copyright &copy; 2018.TroubleT. All right reserved.</a>
 	</footer>
 	</div>
 	<!-- /container -->

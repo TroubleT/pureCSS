@@ -62,8 +62,9 @@ window.onclick = function(event) {
 
 // close envelope
 (function($) {
-$('.envelope').on('click', function(e) {
+$('#sendForm').on('click', function(e) {
    $('.envelope__top').toggleClass('envelope__top_close');     
-   $('.paper').toggleClass('paper_close');               
+   $('.paper').toggleClass('paper_close');
+   setTimeout(function(){$('.envelope').toggleClass('envelopeToRight')}, 600);
 });
 })(jQuery);

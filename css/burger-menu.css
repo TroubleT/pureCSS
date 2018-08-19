@@ -54,9 +54,6 @@
     z-index: 4 ;
 }
 
-.menu__links-item:hover {
-    text-decoration: underline;
-}
 
 
 .menu.menu_state_open .menu__icon span:nth-child(1) {
@@ -85,14 +82,18 @@
   margin-top: 70px;
   z-index: 100;
 }
+.menu__links{
+  text-align: center;
+}
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 960px) {
   .menu__icon{
     display: inline-block;
   }
   
   .menu__links {
-    position: relative;
+    position: relative; 
+    text-align: center;
     display: none;
     top: 0;
     right: 0;
@@ -109,4 +110,11 @@
     color: #ffffff;
     z-index: 100;
   }
+}
+
+
+.menu__links-item:hover {
+    text-decoration: underline;
+    background-color: #8c0034;
+    color: #ffffff;
 }

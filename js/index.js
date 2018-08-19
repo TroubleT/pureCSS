@@ -35,7 +35,7 @@ function scrollFunction() {
 
 document.getElementById('topBtn')
     .addEventListener('click', function() {
-        document.documentElement.scrollTop = 0;
+   document.documentElement.scrollTop = 0
     });
 
 // info animation
@@ -43,9 +43,15 @@ let change = document.getElementsByClassName('information')
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseover", function() {
         const opacity = document.getElementsByClassName('img-info')
-        for (let i in opacity) {
+        const h = document.getElementsByClassName('info-h')
+        const btn = document.getElementsByClassName('info-b')
+        const res = document.getElementsByClassName('res')
+        
+        for (let i = 0; i < change.length; i++) {
+           if( event.target === opacity[i] || event.target === res[i] || event.target === h[i] || event.target === btn[i]){
 
             opacity[i].style.opacity = '0.3'
+           }
         }
 
 
@@ -56,7 +62,7 @@ for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseover", function() {
         const res = document.getElementsByClassName('res')
 
-        for (let i in res) {
+        for (let i = 0; i < change.length; i++) {
 
             res[i].style.display = 'block';
         }
@@ -67,7 +73,7 @@ for (let i = 0; i < change.length; i++) {
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseout", function() {
         const res = document.getElementsByClassName('res')
-        for (let i in res) {
+        for (let i = 0; i < change.length; i++) {
 
             res[i].style.display = 'none'
 
@@ -78,7 +84,7 @@ for (let i = 0; i < change.length; i++) {
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseout", function() {
         const opacity = document.getElementsByClassName('img-info')
-        for (let i in opacity) {
+        for (let i = 0; i < change.length; i++) {
 
             opacity[i].style.opacity = '1'
         }
