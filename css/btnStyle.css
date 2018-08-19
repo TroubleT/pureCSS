@@ -2,7 +2,7 @@
 .btn,
 .btn-border-rev-o:before,
 .btn-border-rev-o:after {
-	transition: all 0.3s;
+	transition: all 0.1s;
 }
 
 /* Main Styles */

@@ -15,6 +15,10 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="css/info.css" type="text/css" />
 	<link rel="stylesheet" href="css/btnStyle.css" type="text/css" />
+	<link rel="stylesheet" href="css/footer.css" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<button id="topBtn">Top</button>
@@ -208,21 +212,21 @@
 				</div>
 
 				<div class="paper">
-					<form>
+					<form >
 						<h2>Замовлення</h2>
 						<div class="input-container">
-							<input class="input-field" type="text" placeholder="Ім'я" name="usrnm">
+							<input class="input-field" type="text" placeholder="Ім'я" name="client_name" required>
 						</div>
 
 						<div class="input-container">
-							<input class="input-field" type="text" placeholder="E-mail" name="email">
+							<input class="input-field" placeholder="E-mail" type="email" name="client-email" title="example@email.com" required>
 						</div>
 
 						<div class="input-container">
-							<input class="input-field" type="password" placeholder="Номер телефона" name="psw">
+							<input class="input-field" placeholder="Номер телефона" type="text" name="client_phone" pattern="[+]{1}[0-9]{12}" title="+380123456789" required>
 						</div>
 
-						<button type="submit" id = 'sendForm' class="btn">Надіслати</button>
+						<button id = 'sendForm' class="btn">Надіслати</button>
 					</form>
 				</div>
 
@@ -233,26 +237,57 @@
 			</div>
 		</div>
 	</section>
-	<footer>
-		<div class = 'footer'>
-		<div>
-			адрес зліва
-		</div>
-		<div id="follow">
-			Follow us
-			<a>
-					<img src="" alt = "youtube">
-				</a>
-			<a>
-					<img src="" alt = "youtube">
-				</a>
-			<a>
-					<img src="" alt = "youtube">
-				</a>
-		</div>
-		</div>
-		<a>Copyright &copy; 2018.TroubleT. All right reserved.</a>
-	</footer>
+		<footer id = 'follow' class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Men`s wine</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.3713430692774!2d24.02722377880337!3d49.83390217767619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6608178ecd%3A0x2fd22dcb1ac6c47a!2z0LLRg9C70LjRhtGPINCU0YDQsNCz0L7QvNCw0L3QvtCy0LAsIDI2LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1534704902564" width="350" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				<p class="footer-links">
+				<a  href="#history">Історія</a>
+				·
+				<a  href="#wines" >Вина</a>
+				·
+				<a  href="#cellar">Виноробня</a>
+				·
+				<a href="#order">Зробити замовлення</a>
+				·
+				<a href="#follow">Контакти</a>
+				</p>
+
+				<p class="footer-company-name">	Copyright &copy; 2018.TroubleT. All right reserved.</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>вул.Драгоманова,2</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+38 093 58 366 43</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">menswine@gmail.com</a></p>
+					
+				</div>
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/profile.php?id=100011555944074"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=uk"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/hryhorii-starykov-7b7a88169/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/TroubleT"><i class="fa fa-github"></i></a>
+
+			</div>
+			</div>
+
+
+		</footer>
 	</div>
 	<!-- /container -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
