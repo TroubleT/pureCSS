@@ -63,11 +63,17 @@ window.onclick = function(event) {
 // close envelope
 (function($) {
 $('#sendForm').on('click', function(e) {
+   e.preventDefault();
   let el = $('.input-field')
     if (el[0].value.length >0 && el[1].value.length >0 && el[2].value.length >0 ){
+      let data = el[0].value + el[1].value + el[2].value;
+            $.ajax({
+                url: 'form.php',
+                method: 'POST',
+                data: {text: data}});
    $('.envelope__top').toggleClass('envelope__top_close');     
    $('.paper').toggleClass('paper_close');
    setTimeout(function(){$('.envelope').toggleClass('envelopeToRight')}, 600)
-};
+}
 });
 })(jQuery);

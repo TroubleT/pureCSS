@@ -63,7 +63,7 @@ for (let i = 0; i < change.length; i++) {
         const res = document.getElementsByClassName('res')
 
         for (let i = 0; i < change.length; i++) {
-
+    
             res[i].style.display = 'block';
         }
     })
