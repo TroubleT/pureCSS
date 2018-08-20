@@ -7,6 +7,9 @@
   });
 })(jQuery);
 
+
+
+
 // close menu after click on link
 
 (function($) {
@@ -17,7 +20,10 @@
   });
 })(jQuery);
 
+
+
 // Get the button that opens the modal
+
 const btnH = document.getElementById("myBtnH");
 btnH.addEventListener('click', function() {
       const modalH = document.getElementById('myModalH');
@@ -48,6 +54,8 @@ x.addEventListener('click', function() {
   });
 });
 
+
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   const modal = document.getElementsByClassName('modal');
@@ -60,7 +68,9 @@ window.onclick = function(event) {
 };
 
 
+
 // close envelope
+
 (function($) {
 $('#sendForm').on('click', function(e) {
    e.preventDefault();
@@ -77,3 +87,26 @@ $('#sendForm').on('click', function(e) {
 }
 });
 })(jQuery);
+
+
+
+//  smooth scrolling
+
+$('#topBtn').click(function(){
+       $('html, body').animate({scrollTop:0}, 1000);
+});
+$('#historyLink').click(function(){
+       $('html, body').animate({scrollTop:$('#history').offset().top}, 1000);
+});
+$('#winesLink').click(function(){
+       $('html, body').animate({scrollTop:$('#wines').offset().top}, 1000);
+});
+$('#cellarLink').click(function(){
+       $('html, body').animate({scrollTop:$('#cellar').offset().top}, 1000);
+});
+$('#orderLink').click(function(){
+       $('html, body').animate({scrollTop:$('#order').offset().top}, 1000);
+});
+$('#followLink').click(function(){
+       $('html, body').animate({scrollTop:$('#follow').offset().top}, 1000);
+});

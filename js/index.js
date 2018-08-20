@@ -1,3 +1,5 @@
+// insert modal info into html
+
 document.getElementById('myBtnH')
     .addEventListener('click', function() {
         fetch('history.html?r=' + Math.random())
@@ -19,6 +21,8 @@ document.getElementById('myBtnW')
             .then(modal => document.getElementById('placeholderW').innerHTML = modal);
     });
 
+
+
 // topButton
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -33,13 +37,11 @@ function scrollFunction() {
     }
 }
 
-document.getElementById('topBtn')
-    .addEventListener('click', function() {
-   document.documentElement.scrollTop = 0
-    });
 
-// info animation
-let change = document.getElementsByClassName('information')
+// div info animation
+
+// change opacity when mouseover
+let change = document.getElementsByClassName('information')    
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseover", function() {
         const opacity = document.getElementsByClassName('img-info')
@@ -58,6 +60,7 @@ for (let i = 0; i < change.length; i++) {
     })
 };
 
+// change style.display for div 'res' when mouseover
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseover", function() {
         const res = document.getElementsByClassName('res')
@@ -69,7 +72,7 @@ for (let i = 0; i < change.length; i++) {
     })
 };
 
-
+// change style.display for div 'res' when mouseout
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseout", function() {
         const res = document.getElementsByClassName('res')
@@ -81,6 +84,7 @@ for (let i = 0; i < change.length; i++) {
     })
 };
 
+// change opacity for div 'img-info' when mouseout
 for (let i = 0; i < change.length; i++) {
     change[i].addEventListener("mouseout", function() {
         const opacity = document.getElementsByClassName('img-info')

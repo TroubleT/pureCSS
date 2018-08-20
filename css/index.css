@@ -86,7 +86,7 @@ body {
     background-image: url("/img/form-img.jpg");
     position: relative;
     width: 100%;
-    max-width: 960px;
+    
     
 }
 
@@ -275,4 +275,3 @@ footer {
     text-align: center;
 
 }
-
