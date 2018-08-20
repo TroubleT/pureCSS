@@ -83,7 +83,7 @@ body {
 }
 
 #order {
-    background-image: url("/img/formImg.jpg");
+    background-image: url("img/formImg.jpg");
     position: relative;
     width: 100%;
     
