@@ -245,7 +245,7 @@ body {
     position: relative;
     text-align: center;
     align-items:center;
-    width: 960px;
+    max-width: 960px;
     height: auto;
     background-color: #FFF;
     
@@ -274,4 +274,9 @@ footer {
     align-items:center;
     text-align: center;
 
+}
+iframe {
+    max-width:350px;
+    max-height:250px;
+    position:relative;
 }
